@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: springJPA
+#congigue jpa
+
+  datasource:
+    username: postgres
+    password: 14022002
+    url: jdbc:postgresql://localhost:5433/spring_jpa
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    hibernate:
+        ddl-auto: update
+    show-sql: true
+springdoc:
+  swagger-ui:
+    path: /
+fileStorage:
+  image_location: "fileStorage/images"
